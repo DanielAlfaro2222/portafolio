@@ -132,16 +132,18 @@
                                     </li>
                                 {% endfor %}
                             </ul>
-        
-                            <a href="{{proyecto.github}}" target="_blank" rel="noopener" class="container-info-project__link container-info-project__link--one">
-                                <i class="devicon-github-original" aria-hidden="true"></i>
-                            </a>
-                                
-                            {% if proyecto.live %}
-                                <a href="{{proyecto.live}}" target="_blank" rel="noopener" class="container-info-project__link container-info-project__link--two">
-                                    <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
+                            
+                            <div class="container-links-info-project">
+                                <a href="{{proyecto.github}}" target="_blank" rel="noopener" class="container-links-info-project__link container-links-info-project__link--one">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i>
                                 </a>
-                            {% endif %}
+                                    
+                                {% if proyecto.live %}
+                                    <a href="{{proyecto.live}}" target="_blank" rel="noopener" class="container-links-info-project__link container-links-info-project__link--two">
+                                        <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                {% endif %}
+                            </div>
                         </div>
                     </article>
                 {% endfor %}

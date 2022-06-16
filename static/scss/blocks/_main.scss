@@ -136,12 +136,12 @@
 
     &__title {
         margin-top: 0;
-        font-size: .97rem;
+        font-size: .88rem;
         color: $color-primary;
     }
 
     &__paragraph {
-        font-size: .86rem;
+        font-size: .83rem;
         line-height: 1.4em;
         color: $color-secundary;
         font-style: italic;
@@ -162,6 +162,14 @@
         &__title,
         &__paragraph {
             margin: 0;
+        }
+
+        &__title {
+            font-size: .9rem;
+        }
+
+        &__paragraph {
+            font-size: .86rem;
         }
     }
 
@@ -191,28 +199,28 @@
 
 .container-project {
     background-color: $bgcolor-secundary;
-    margin-bottom: 1.4em;
+    margin-bottom: 1.6em;
     border-radius: 1em;
     overflow: hidden;
     transform: translateY(0);
     transition: transform .35s;
     box-shadow: $box-shadow;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 
     &:hover {
         transform: translateY(-10px);
         transition: transform .35s;
     }
 
-    @include media-query(400px) {
+    @include media-query(350px) {
         max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     @include media-query(600px) {
         max-width: 270px;
-        height: 370px;
+        height: 375px;
         margin: 0;
     }
 
@@ -246,25 +254,43 @@
 
     &__subtitle {
         margin-top: 0;
-        font-size: .97rem;
+        font-size: .88rem;
         color: $color-primary;
     }
 
     &__paragraph {
-        font-size: .82rem;
+        font-size: .83rem;
         line-height: 1.4em;
         color: $color-secundary;
     }
 
+    @include media-query(1000px) {
+        &__title {
+            font-size: .9rem;
+        }
+
+        &__paragraph {
+            font-size: .86rem;
+        }
+    }
+}
+
+.container-links-info-project {
+    @include flex($justify-content: center, $align-items: flex-end);
+    column-gap: .7em;
+    font-size: 1.3rem;
+
     &__link {
         color: $color-primary;
-        margin-right: .6em;
-        font-size: 1.3rem;
     }
 
     &__link--one:hover,
     &__link--two:hover {
         color: $color-btn-form;
+    }
+
+    @include media-query(1000px) {
+        font-size: 1.44rem;
     }
 }
 
@@ -340,7 +366,7 @@
 }
 
 .container-form-contact {
-    font-size: .9rem;
+    font-size: .88rem;
 
     &__btn {
         width: 100%;
