@@ -1,0 +1,83 @@
+[
+{
+    "model": "Portafolio.technology",
+    "pk": 1,
+    "fields": {
+        "name": "HTML",
+        "icon": "<i class=\"devicon-html5-plain container-article-technology__icon\"></i>",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.technology",
+    "pk": 2,
+    "fields": {
+        "name": "CSS",
+        "icon": "<i class=\"devicon-css3-plain container-article-technology__icon\"></i>",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.technology",
+    "pk": 3,
+    "fields": {
+        "name": "JavaScript",
+        "icon": "<i class=\"devicon-javascript-plain container-article-technology__icon\"></i>",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.technology",
+    "pk": 4,
+    "fields": {
+        "name": "SASS",
+        "icon": "<i class=\"devicon-sass-original container-article-technology__icon\"></i>",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.technology",
+    "pk": 5,
+    "fields": {
+        "name": "Django",
+        "icon": "<i class=\"devicon-django-plain-wordmark container-article-technology__icon\"></i>",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.technology",
+    "pk": 6,
+    "fields": {
+        "name": "Python",
+        "icon": "<i class=\"devicon-python-plain container-article-technology__icon\"></i>",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.technology",
+    "pk": 7,
+    "fields": {
+        "name": "GIT",
+        "icon": "<i class=\"devicon-git-plain container-article-technology__icon\"></i>",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.technology",
+    "pk": 8,
+    "fields": {
+        "name": "MySQL",
+        "icon": "<i class=\"devicon-mysql-plain-wordmark container-article-technology__icon\"></i>",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.technology",
+    "pk": 9,
+    "fields": {
+        "name": "Linux",
+        "icon": "<i class=\"devicon-linux-plain container-article-technology__icon\"></i>",
+        "state": true
+    }
+}
+]

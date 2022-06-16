@@ -1,0 +1,12 @@
+@use '../config/config' as *;
+@use './mixins' as *;
+
+%subtitle-movil {
+    font-size: $font-size-subtitle-movil;
+    margin-bottom: 1.4em;
+    margin-top: 0;
+
+    @include media-query(1000px) {
+        font-size: $font-size-subtitle-tablet;
+    }
+}

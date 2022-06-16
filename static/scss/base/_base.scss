@@ -1,0 +1,31 @@
+@use '../config/config' as *;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bgcolor-body;
+    color: $color-primary;
+    font-family: $font-family;
+    position: relative;
+    text-align: center;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 5%;
+}
+
+body::-webkit-scrollbar-track {
+    background: $bgcolor-secundary;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $color-primary;
+    border-radius: 1em;
+}
+
+.body-scroll-hidden {
+    overflow: hidden;
+}

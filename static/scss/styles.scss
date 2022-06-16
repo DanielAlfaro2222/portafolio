@@ -1,0 +1,11 @@
+// Variables
+@use './config/config.scss' as *;
+
+// Base
+@use './base/base' as *;
+
+// Bloques
+@use './blocks/header' as *;
+@use './blocks/main' as *;
+@use './blocks/footer' as *;
+@use './blocks/aside' as *;

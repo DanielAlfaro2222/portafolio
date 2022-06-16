@@ -1,0 +1,93 @@
+[
+{
+    "model": "Portafolio.project",
+    "pk": 1,
+    "fields": {
+        "name": "Encriptador",
+        "description": "Es una app para encriptar y desencriptar un texto, se realizo como reto del programa Oracle Next Education.",
+        "image": "https://res.cloudinary.com/dpxek6oka/image/upload/v1654648667/Portafolio/encriptador_ru7oem.webp",
+        "github": "https://github.com/DanielAlfaro2222/Challenge-Oracle-ONE-Principiante-en-programacion",
+        "live": "https://reto-oracle-next-education.netlify.app/",
+        "state": true,
+        "techologies": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "Portafolio.project",
+    "pk": 2,
+    "fields": {
+        "name": "Buona vita nutricion",
+        "description": "Es una app que permite agregar, filtrar y eliminar pacientes, este proyecto se realizo para el curso de javascript del programa Oracle Next Education.",
+        "image": "https://res.cloudinary.com/dpxek6oka/image/upload/v1654648899/Portafolio/pacientes_romotf.webp",
+        "github": "https://github.com/DanielAlfaro2222/proyecto-curso-javascript-oracle",
+        "live": "https://steady-sprite-ee6db8.netlify.app/",
+        "state": true,
+        "techologies": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "Portafolio.project",
+    "pk": 3,
+    "fields": {
+        "name": "Juego del ahorcado",
+        "description": "Es un reto del programa Oracle Next Education.",
+        "image": "https://res.cloudinary.com/dpxek6oka/image/upload/v1654649620/Portafolio/ahorcado_q52kj8.webp",
+        "github": "https://github.com/DanielAlfaro2222/Challenge-Oracle-One-ahorcado",
+        "live": "https://reto-oracle-ahorcado.netlify.app/",
+        "state": true,
+        "techologies": [
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "Portafolio.project",
+    "pk": 4,
+    "fields": {
+        "name": "Django blog",
+        "description": "Es una blog sobre tecnología.",
+        "image": "https://res.cloudinary.com/dpxek6oka/image/upload/v1654649939/Portafolio/django_blog_mtyube.webp",
+        "github": "https://github.com/DanielAlfaro2222/Proyecto-Django-Blog",
+        "live": null,
+        "state": true,
+        "techologies": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8
+        ]
+    }
+},
+{
+    "model": "Portafolio.project",
+    "pk": 5,
+    "fields": {
+        "name": "SaleCold",
+        "description": "Es un ecommerce de repuestos de refrigeración para una tienda en Barranquilla.",
+        "image": "https://res.cloudinary.com/dpxek6oka/image/upload/v1654650500/Portafolio/salecold_jb83r8.webp",
+        "github": "https://github.com/senaceet/proyecto-salecold",
+        "live": null,
+        "state": true,
+        "techologies": [
+            1,
+            2,
+            3,
+            5,
+            8
+        ]
+    }
+}
+]

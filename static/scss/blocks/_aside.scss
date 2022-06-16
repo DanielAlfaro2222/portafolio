@@ -1,0 +1,23 @@
+@use '../config/config' as *;
+@use '../helpers/mixins' as *;
+
+.container-aside {
+    display: none;
+    cursor: pointer;
+
+    & a {
+        color: inherit;
+    }
+}
+
+.container-aside--show {
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    font-size: 1.5rem;
+
+    @include media-query(1000px) {
+        font-size: 1.8rem;
+    }
+}

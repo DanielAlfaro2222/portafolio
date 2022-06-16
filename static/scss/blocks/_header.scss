@@ -1,0 +1,65 @@
+@use '../helpers/mixins' as *;
+@use '../config/config' as *;
+
+.container-header {
+    text-align: start;
+    padding: 1.2em;
+
+    &__icon {
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+
+    @include media-query(800px) {
+        &__icon {
+            display: none;
+        }
+    }
+
+    @include media-query(1000px) {
+        padding-right: 2.6em;
+        font-size: 1.1rem;
+    }
+}
+
+.container-header--width {
+    width: 100%;
+    height: 100vh;
+}
+
+.container-main-nav {
+    display: none;
+
+    @include media-query(800px) {
+        display: block;
+    }
+}
+
+.container-main-nav--show {
+    height: 95vh;
+    @include flex($justify-content: center, $align-items: center);
+    text-align: center;
+}
+
+.container-list-elements-nav {
+    list-style: none;
+    padding: 0;
+    @include flex($flex-direction: column);
+    gap: 2em;
+
+    @include media-query(800px) {
+        @include flex($justify-content: flex-end);
+        flex-direction: row;
+        gap: 1.3em;
+    }
+}
+
+.container-element-nav {
+    & a {
+        color: inherit;
+    }
+
+    &:hover {
+        color: $color-btn-form;
+    }
+}

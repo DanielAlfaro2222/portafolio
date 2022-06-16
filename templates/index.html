@@ -1,0 +1,201 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daniel Alfaro backend developer" />
+	<meta name="keywords" content="Daniel Alfaro, backend developer">
+    <link rel="stylesheet" href="https://res.cloudinary.com/dpxek6oka/raw/upload/v1643485116/normalize_ej2ndq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dpxek6oka/image/upload/v1654886081/Portafolio/favicon_zv3bst.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Daniel Alfaro</title>
+</head>
+<body id="body">
+    <header class="container-header" id="header">
+        <i class="fa-solid fa-bars container-header__icon" aria-hidden="true" id="btn-menu"></i>
+
+        <nav class="container-main-nav" id="nav-main">
+            <ul class="container-list-elements-nav">
+                <li class="container-element-nav">
+                    <a href="#header">Inicio</a>
+                </li>
+                <li class="container-element-nav">
+                    <a href="#tecnologias">Skills</a>
+                </li>
+                <li class="container-element-nav">
+                    <a href="#formacion">Formación</a>
+                </li>
+                <li class="container-element-nav">
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                <li class="container-element-nav">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-main">
+        <section class="container-section-about-me">
+            <h1 class="container-section-about-me__title">
+                Hola, soy Daniel Alfaro
+            </h1>
+
+            <h2 class="container-section-about-me__subtitle">
+                Backend Developer
+            </h2>
+
+            <p class="container-section-about-me__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum at, blanditiis voluptas ipsa quae dolores commodi. Amet, quaerat odio perferendis veritatis voluptate, distinctio a perspiciatis earum quam deserunt, sit nulla?
+                In quos consectetur illum fuga iste quasi soluta minima, maiores reiciendis incidunt nisi voluptate.
+            </p>
+
+            <article class="container-list-social-media">
+                <a href="https://github.com/DanielAlfaro2222" target="_blank" rel="noopener" class="container-list-social-media__link container-list-social-media__link--one">
+                    <i class="devicon-github-original" aria-hidden="true"></i>
+                </a>
+
+                <a href="http://www.linkedin.com/in/alfaro-daniel" target="_blank" rel="noopener" class="container-list-social-media__link container-list-social-media__link--two">
+                    <i class="devicon-linkedin-plain" aria-hidden="true"></i>
+                </a>
+            </article>
+        </section>
+
+        <section class="container-section-technologies" id="tecnologias"> 
+            <h2 class="container-section-technologies__subtitle">
+                Skills
+            </h2>
+
+            <article class="container-list-technologies">
+                {% for tecnologia in tecnologias %}
+                    <section class="container-article-technology">
+                        {{tecnologia.icon |safe}}
+
+                        {{tecnologia}}
+                    </section>
+                {% endfor %}
+            </article>
+        </section>
+
+        <section id="formacion" class="container-section-formations">
+            <h2 class="container-section-formations__subtitle">
+                Formación académica
+            </h2>
+
+            <article class="container-article-list-formations">
+                {% for formacion in formaciones %}
+                    <section class="container-article-formation">
+                        <h3 class="container-article-formation__title">
+                            {{formacion}}
+                        </h3>
+                        <p class="container-article-formation__paragraph">
+                            {{formacion.school}}
+                        </p>
+                        <p class="container-article-formation__paragraph container-article-formation__paragraph--margin">
+                            {{formacion.year}}
+                        </p>
+                    </section>
+                {% endfor %}
+            </article>
+        </section>
+
+        <section id="proyectos" class="container-section-projects">
+            <h2 class="container-section-projects__subtitle">
+                Proyectos
+            </h2>
+
+            <div class="container-list-projects"> 
+                {% for proyecto in proyectos %}
+                    <article class="container-project">
+                        <img src="{{proyecto.image}}" alt="Imagen {{proyecto}}" decoding="async" loading="lazy">
+
+                        <div class="container-info-project">
+                            <h3 class="container-info-project__subtitle">
+                                {{proyecto}}
+                            </h3>
+        
+                            <p class="container-info-project__paragraph">
+                                {{proyecto.description}}
+                            </p>
+        
+                            <ul class="container-list-technologies-project">
+                                {% for tecnologia in proyecto.tecnologias %}
+                                    <li class="container-list-technologies-project__item">  {{tecnologia}}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+        
+                            <a href="{{proyecto.github}}" target="_blank" rel="noopener" class="container-info-project__link container-info-project__link--one">
+                                <i class="devicon-github-original" aria-hidden="true"></i>
+                            </a>
+                                
+                            {% if proyecto.live %}
+                                <a href="{{proyecto.live}}" target="_blank" rel="noopener" class="container-info-project__link container-info-project__link--two">
+                                    <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="container-section-contact" id="contacto">
+            <h2 class="container-section-contact__subtitle">
+                Creemos algo juntos
+            </h2>
+
+            {% if messages %}
+                {% for mensaje in messages %}
+                    <p class="container-messages-contact">
+                        <i class="{% if mensaje.tags == 'error' %}fa-solid fa-triangle-exclamation{% else %}fa-solid fa-circle-check {% endif %} container-messages-contact__icon" aria-hidden="true"></i>
+                        {{mensaje}}
+                    </p>
+                {% endfor %}
+            {% endif %}
+
+            <form action="{% url 'Portafolio:send-mail' %}" method="POST" class="container-form-contact">
+                {% csrf_token %}
+    
+                <label class="container-label-form">
+                    <input type="text" placeholder="Nombre" class="container-label-form__input" required maxlength="100" minlength="4" name="nombre">
+                </label>
+    
+                <label class="container-label-form">
+                    <input type="email" placeholder="Email" class="container-label-form__input" required maxlength="100" name="correo">
+                </label>
+    
+                <label class="container-label-form">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" class="container-label-form__textarea" required></textarea>
+                </label>
+
+                <button class="container-form-contact__btn">
+                    Enviar
+                </button>
+            </form>
+        </section>
+
+        <aside class="container-aside" id="container-aside">
+            <a href="#header">
+                <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </aside>
+    </main>
+
+    <footer class="container-footer">
+        <p>
+            Creado por Daniel Alfaro
+        </p>
+    </footer>
+
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
