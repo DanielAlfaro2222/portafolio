@@ -123,20 +123,12 @@
     margin-bottom: 1.4em;
     border-radius: 1em;
     overflow: hidden;
-    transform: translateY(0);
-    transition: transform .35s;
     box-shadow: $box-shadow;
-    cursor: pointer;
     padding: 1em;
-
-    &:hover {
-        transform: translateY(-10px);
-        transition: transform .35s;
-    }
 
     &__title {
         margin-top: 0;
-        font-size: .88rem;
+        font-size: .85rem;
         color: $color-primary;
     }
 
@@ -158,6 +150,8 @@
         margin-bottom: 0;
         @include flex($flex-direction: column, $justify-content: center, $align-items: center);
         gap: 1.2em;
+        transform: translateY(0);
+        transition: transform .35s;
 
         &__title,
         &__paragraph {
@@ -170,6 +164,11 @@
 
         &__paragraph {
             font-size: .86rem;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+            transition: transform .35s;
         }
     }
 
@@ -202,17 +201,9 @@
     margin-bottom: 1.6em;
     border-radius: 1em;
     overflow: hidden;
-    transform: translateY(0);
-    transition: transform .35s;
     box-shadow: $box-shadow;
-    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-
-    &:hover {
-        transform: translateY(-10px);
-        transition: transform .35s;
-    }
 
     @include media-query(350px) {
         max-width: 300px;
@@ -226,6 +217,13 @@
 
     @include media-query(1000px) {
         max-width: 255px;
+        transform: translateY(0);
+        transition: transform .35s;
+
+        &:hover {
+            transform: translateY(-10px);
+            transition: transform .35s;
+        }
     }
 }
 
@@ -254,7 +252,7 @@
 
     &__subtitle {
         margin-top: 0;
-        font-size: .88rem;
+        font-size: .85rem;
         color: $color-primary;
     }
 
@@ -314,18 +312,20 @@
     font-size: $font-size-paragraph-movil;
     border-radius: 1em;
     color: $color-secundary;
-    cursor: pointer;
-    transform: translateY(0);
-    transition: transform .35s;
     box-shadow: $box-shadow;
 
     &__icon {
         font-size: 1.6rem;
     }
 
-    &:hover {
-        transform: translateY(-8px);
+    @include media-query(1000px) {
+        transform: translateY(0);
         transition: transform .35s;
+
+        &:hover {
+            transform: translateY(-8px);
+            transition: transform .35s;
+        }
     }
 }
 
@@ -366,7 +366,7 @@
 }
 
 .container-form-contact {
-    font-size: .88rem;
+    font-size: .83rem;
 
     &__btn {
         width: 100%;
@@ -403,6 +403,7 @@
 .container-label-form {
     display: block;
     margin-bottom: 1.2em;
+    font-size: .83rem;
 
     &__input,
     &__textarea {
@@ -423,5 +424,9 @@
         height: 140px;
         resize: none;
         padding: 1em;
+    }
+
+    @include media-query(800px) {
+        font-size: $font-size-paragraph-movil;
     }
 }
