@@ -59,7 +59,7 @@
         "description": "Es una blog sobre tecnología.",
         "image": "https://res.cloudinary.com/dpxek6oka/image/upload/v1654649939/Portafolio/django_blog_mtyube.webp",
         "github": "https://github.com/DanielAlfaro2222/Proyecto-Django-Blog",
-        "live": null,
+        "live": "https://django-blog-co.herokuapp.com/",
         "state": true,
         "techologies": [
             1,
@@ -87,6 +87,40 @@
             3,
             5,
             8
+        ]
+    }
+},
+{
+    "model": "Portafolio.project",
+    "pk": 6,
+    "fields": {
+        "name": "Galeria",
+        "description": "Es un proyecto para practicar la programación orientada a objetos  y la manipulación básica del DOM.",
+        "image": "https://res.cloudinary.com/dpxek6oka/image/upload/v1655517947/Portafolio/galeria_moiliy.webp",
+        "github": "https://github.com/DanielAlfaro2222/galeria/tree/main",
+        "live": "https://superlative-jalebi-deed46.netlify.app/",
+        "state": true,
+        "techologies": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "Portafolio.project",
+    "pk": 7,
+    "fields": {
+        "name": "Calculadora",
+        "description": "Proyecto que realiza las operaciones básicas de una calculadora, realizado usando la POO y manipulación básica del DOM.",
+        "image": "https://res.cloudinary.com/dpxek6oka/image/upload/v1655678944/Portafolio/calculadora_vfrmbg.webp",
+        "github": "https://github.com/DanielAlfaro2222/calculadora",
+        "live": "https://calculadora-js-das.netlify.app/",
+        "state": true,
+        "techologies": [
+            1,
+            2,
+            3
         ]
     }
 }

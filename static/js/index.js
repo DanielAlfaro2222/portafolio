@@ -37,12 +37,16 @@ btnThemeMode.addEventListener('click', () => {
     btnThemeMode.classList.toggle('fa-sun');
 
     if (body.classList.contains('body--light')) {
-        rootStyles.setProperty('--color-primary', '#444444');
+        rootStyles.setProperty('--color-primary', '#000000');
         rootStyles.setProperty('--bgcolor-secundary', '#FCFCFC');
         rootStyles.setProperty('--box-shadow', 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px');
+        rootStyles.setProperty('--color-btn-form', '#2978b5');
+        rootStyles.setProperty('--color-secundary', '#555555');
     } else {
         rootStyles.setProperty('--color-primary', 'rgb(205, 205, 255)');
         rootStyles.setProperty('--bgcolor-secundary', 'rgb(42, 47, 76)');
         rootStyles.setProperty('--box-shadow', 'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px');
+        rootStyles.setProperty('--color-btn-form', '#90a0d9');
+        rootStyles.setProperty('--color-secundary', 'rgb(189, 189, 221)');
     }
 });

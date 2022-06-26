@@ -16,6 +16,10 @@
         &__icon {
             display: none;
         }
+
+        &__icon--color:hover {
+            color: var(--color-btn-form);
+        }
     }
 
     @include media-query(1000px) {

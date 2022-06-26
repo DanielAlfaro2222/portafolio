@@ -1,0 +1,42 @@
+[
+{
+    "model": "Portafolio.formation",
+    "pk": 1,
+    "fields": {
+        "name": "Técnico en sistemas",
+        "school": "SENA",
+        "year": "2019-2020",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.formation",
+    "pk": 2,
+    "fields": {
+        "name": "Análisis y desarrollo de sistemas de información",
+        "school": "SENA",
+        "year": "En curso",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.formation",
+    "pk": 3,
+    "fields": {
+        "name": "Diplomado MisionTic 2022",
+        "school": "MinTic",
+        "year": "2021",
+        "state": true
+    }
+},
+{
+    "model": "Portafolio.formation",
+    "pk": 4,
+    "fields": {
+        "name": "Oracle next education",
+        "school": "Oracle-Alura",
+        "year": "En curso",
+        "state": true
+    }
+}
+]

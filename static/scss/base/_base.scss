@@ -33,14 +33,13 @@ body::-webkit-scrollbar-thumb {
 
 // Estilos light mode
 .body--light {
-    background-color: $bgcolor-body-light;
-    color: $color-primary-light;
+    background-color: rgba(240, 239, 239, 0.64);
 }
 
 .body--light::-webkit-scrollbar-track {
-    background: $bgcolor-body-light;
+    background: #f8f8f8;
 }
 
 .body--light::-webkit-scrollbar-thumb {
-    background: $color-secundary-light;
+    background: var(--color-secundary);
 }
