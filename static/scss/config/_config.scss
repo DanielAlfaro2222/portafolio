@@ -1,10 +1,13 @@
-$bgcolor-body: #23283e;
-$bgcolor-secundary: rgb(42, 47, 76);
-$font-family: 'Open Sans', sans-serif;
-$color-primary: rgb(205, 205, 255);
-$color-secundary: rgb(189, 189, 221);
-$color-btn-form: #90a0d9;
-$box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+:root {
+    --bgcolor-body: #23283e;
+    --bgcolor-secundary: rgb(42, 47, 76);
+    --font-family: 'Open Sans', sans-serif;
+    --color-primary: rgb(205, 205, 255);
+    --color-secundary: rgb(189, 189, 221);
+    --color-btn-form: #90a0d9;
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    --transition: color .1s, background-color .2s ease-in-out;
+}
 
 // Tamaño de fuentes
 $font-size-paragraph-movil: .95rem;
@@ -12,3 +15,10 @@ $font-size-title-movil: 1.42rem;
 $font-size-title-tablet: 1.68rem;
 $font-size-subtitle-movil: 1.2rem;
 $font-size-subtitle-tablet: 1.38rem;
+
+// Variables light mode
+$bgcolor-body-light: #FCFCFC;
+$color-primary-light: #555555;
+$color-secundary-light: #444444;
+$color-blue-light: #2978b5;
+$box-shadow-light: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

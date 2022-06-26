@@ -5,7 +5,7 @@
     text-align: center;
     padding: 1.1em;
     font-size: .8rem;
-    color: $color-secundary;
+    color: var(--color-secundary);
 
     @include media-query(800px) {
         font-size: $font-size-paragraph-movil;

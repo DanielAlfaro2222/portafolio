@@ -20,11 +20,6 @@
     }
 }
 
-@mixin animacion-preloader($transform: 0deg, $animation-delay: 0s) {
-    transform: rotate($transform);
-    animation-delay: $animation-delay;
-}
-
 @mixin media-query($min-width) {
     @media screen and (min-width: $min-width) {
         @content;

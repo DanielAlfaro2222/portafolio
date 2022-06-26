@@ -5,11 +5,12 @@ html {
 }
 
 body {
-    background-color: $bgcolor-body;
-    color: $color-primary;
-    font-family: $font-family;
+    background-color: var(--bgcolor-body);
+    color: var(--color-primary);
+    font-family: var(--font-family);
     position: relative;
     text-align: center;
+    transition: var(--transition);
 }
 
 body::-webkit-scrollbar {
@@ -18,14 +19,28 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: $bgcolor-secundary;
+    background: var(--bgcolor-secundary);
 }
 
 body::-webkit-scrollbar-thumb {
-    background: $color-primary;
+    background: var(--color-primary);
     border-radius: 1em;
 }
 
 .body-scroll-hidden {
     overflow: hidden;
+}
+
+// Estilos light mode
+.body--light {
+    background-color: $bgcolor-body-light;
+    color: $color-primary-light;
+}
+
+.body--light::-webkit-scrollbar-track {
+    background: $bgcolor-body-light;
+}
+
+.body--light::-webkit-scrollbar-thumb {
+    background: $color-secundary-light;
 }

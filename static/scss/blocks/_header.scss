@@ -11,6 +11,8 @@
     }
 
     @include media-query(800px) {
+        @include flex($align-items: center, $justify-content: flex-end);
+
         &__icon {
             display: none;
         }
@@ -59,7 +61,15 @@
         color: inherit;
     }
 
-    &:hover {
-        color: $color-btn-form;
+    @include media-query(800px) {
+        &:hover {
+            color: var(--color-btn-form);
+        }
     }
+}
+
+.container-header__icon--color {
+    margin-left: .8em;
+    font-size: 1.7rem;
+    cursor: pointer;
 }
